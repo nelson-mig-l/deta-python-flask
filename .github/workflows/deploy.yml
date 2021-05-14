@@ -1,0 +1,20 @@
+
+name: Deploy to deta
+
+on:
+  push:
+    branches: [ deta ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: BogDAAAMN/deta-deploy-action@v1.0.0
+        with:
+          deta-access-token: ${{ secrets.DETA_TOKEN }}
+          deta-name: 'python-flask'
+          #deta-project: 'default'

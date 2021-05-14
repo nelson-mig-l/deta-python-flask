@@ -1,0 +1,7 @@
+# Intellij/PyCharm config
+.idea/
+*.iml
+
+
+__pycache__/
+venv/
