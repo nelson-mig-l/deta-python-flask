@@ -35,9 +35,11 @@ deta deploy
 
 Via [github action](.github/workflows/deploy.yml).
 
+Remember to create and set the `DETA_TOKEN` secret.
+
 ## Database
 
-Database is a [_Deta Base_](https://docs.deta.sh/docs/base/about) :clown_face: (a )
+Database is a [_Deta Base_](https://docs.deta.sh/docs/base/about) :clown_face:
 
 No configuration is needed other than Deta Base name.
 
